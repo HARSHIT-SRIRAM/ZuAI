@@ -1,0 +1,22 @@
+{
+  "name": "zuai",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon backend/index.js",
+    "client": "npm start --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.4"
+  }
+}

@@ -1,0 +1,52 @@
+.blog-detail {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+}
+
+.blog-detail h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #333333;
+}
+
+.blog-detail .username {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.blog-detail p {
+  font-size: 1.125rem;
+  color: #444444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.blog-detail .blog-content {
+  font-size: 1rem;
+  color: #333333;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
+
+.blog-detail .loading,
+.blog-detail .error {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #666666;
+}
+
+.blog-detail .error {
+  color: #e74c3c;
+}
+
+.blog-detail .blog-content {
+  border-top: 1px solid #dddddd;
+  padding-top: 20px;
+  margin-top: 20px;
+}

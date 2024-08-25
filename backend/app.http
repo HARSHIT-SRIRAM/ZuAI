@@ -1,0 +1,40 @@
+### Register
+POST http://localhost:5000/users/register
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "email": "admin@gmail.com",
+  "password": "admin123",
+  "bio": "Software Developer and tech enthusiast",
+  "profile_picture": "https://example.com/profile.jpg",
+  "role": "user"
+}
+### Login
+POST http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin123"
+}
+
+### Get Posts
+GET http://localhost:5000/posts/getpost
+
+### Get Posts By ID
+GET http://localhost:5000/posts/getpost/5
+
+### Create a new post
+POST http://localhost:5000/posts/createpost
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "title": "My First Post",
+  "content": "This is the content of the first post."
+}
+
+
+###
+GET http://localhost:5000/users/profile/2
