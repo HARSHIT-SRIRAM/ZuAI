@@ -9,7 +9,11 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 
 const corsOptions = {
-  origin: "https://zu-ai-vlm5.vercel.app" || "http://localhost:3000",
+  origin: [
+    "http://localhost:3000",
+    "https://zu-ai-vlm5.vercel.app",
+    "https://zu-ai-seven.vercel.app",
+  ],
   methods: "GET,POST,PUT,DELETE",
   allowedHeaders: "Content-Type,Authorization",
 };
